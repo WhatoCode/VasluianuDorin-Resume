@@ -1,0 +1,342 @@
+.full-container {
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+.popup-container {
+    display: flex;
+    position: absolute;
+    backdrop-filter: blur(2px);
+    justify-content: center;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+}
+
+.content {
+    position: sticky;
+    width: 700px;
+    height: 480px;
+    background-color: lightblue;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    top: 60px;
+    padding: 0 15px;
+}
+
+.content h1 {
+    text-align: center;
+    margin-bottom: 18px;
+   
+}
+.content p {
+    margin-bottom: 30px;
+    font-family: Arial;
+    line-height: 20px;
+    font-size: 14px;    
+}
+
+.about-me {
+    font-weight: 600;
+}
+
+.content span {
+    display: block;
+    margin-top: 8px;
+}
+.close-btn {
+    position: absolute;
+    font-size: 16px;
+    right: 10px;
+    top: 10px;
+    padding: 0 6px 0 6px;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 50%; 
+    border: none;
+    color: red;
+    transition: box-shadow 0.3s;
+
+}
+
+.close-btn:active {
+    right: 11px;
+    top: 11px;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+/*********** Main Page ************/
+
+.container
+{
+    max-width: 1000px;
+    min-height: 1000px;
+    background:#fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+    z-index: 1;
+}
+
+.container .left_Side
+{
+    position: relative;
+    background: #003147;
+    padding: 40px;
+}
+
+.profileText
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profileText .imgBx
+{   
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profileText .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profileText h2
+{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profileText h2 span
+{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.contactInfo
+{
+    padding-top: 40px;
+
+}
+.title
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contactInfo ul
+{
+    position: relative;
+    font-size: 0.75em;
+}
+.contactInfo ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+}
+.contactInfo ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 20px;
+    color: #03a9f4;
+}
+.contactInfo ul li span
+{
+    color: #fff;
+    font-weight: 500;
+}
+.contactInfo ul li a {
+    text-decoration: none;
+}
+.contactInfo.education li
+{
+    margin-bottom: 15px;
+}
+.contactInfo.education h5
+{
+    color: #03a9f4;
+    font-weight: 500;
+}
+.contactInfo.education h4:nth-child(2)
+{
+    color: #fff;
+    font-weight: 500;
+}
+.contactInfo.education h4
+{
+    color: #fff;
+    font-weight: 300;
+}
+.contactInfo.language .percent
+{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+margin-top: 5px;
+}
+.contactInfo.language .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+.container .right_Side
+{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+.profileText1
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+.right_Side .about p, .right_Side .profileText1 p {
+    font-size: 15px;
+}
+.about
+{
+    margin-bottom: 20px;
+}
+.about.last-child
+{
+    margin-bottom: 0;
+}
+.title2, .title3
+{
+    margin: 10px;
+    color:#003147;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+p
+{
+    margin-bottom: 10px;
+    color: #333;
+
+}
+.profileText2
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+.skills .box
+{
+position: relative;
+width: 100%; 
+display: grid;
+grid-template-columns: 150px 1fr;
+justify-content: center;
+align-items: center;
+}
+.skills .box h4
+{
+    text-transform: uppercase;
+    color: #848c99;
+    font-weight: 500;
+}
+.skills .box .percent
+{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #948b8b;
+}
+.skills .box .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #83a9f4;
+}
+.interest ul
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    }
+.interest ul li
+{
+    list-style: none;
+    color: #333;
+    font-weight: 600;
+    margin: 10px 0;
+
+}
+.interest ul li .fa
+{
+color: #03a9f4; 
+font-size: 18px;
+width: 20px;
+}
+
+@media (max-width: 1000px)
+{
+    .container
+    {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .interest ul 
+    {
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+@media (max-width: 600px)
+{
+    .container ul
+    {
+        margin: 10px;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: space-around;
+    }
+
+    .content {
+    position: sticky;
+    width: 500px;
+    height: 600px;
+    background-color: lightblue;
+    justify-content: center;
+    color: black;
+    top: 50px;
+    padding: 5px 15px;
+}
+}
